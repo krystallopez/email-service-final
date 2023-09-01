@@ -28,7 +28,7 @@ await ses.sendEmail(params).promise();
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: 'Go Serverless v1.0! Your function executed successfully!',
+        message: `Email sent to ${params.Destination.ToAddresses}`,
         input: event,
       },
       null,
